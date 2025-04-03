@@ -1,105 +1,136 @@
-"# testone" 
-hihihi
+Day 43:
+annotation 
+@BeforeMethod
+@AfterMethod
 
-Day 28 assignment
+@BeforeClass --> execute only once before starting tc 
+@AfterClass ---> execute only once after starting tc
 
-Day 29 checkboxes
-create new package 
-create ne class
+@BeforeTest ---> execute once if we have 1 class for each test, if we have multiple class it will execute for each test level
+@AfterTest 
 
-WebDriver driver=new CChromeDriver();
-driver.get("dd");
-driver.manage().window().maximize();
-//select secific checkbox
-driver.findElement(By.xpath("//input[@id='sunday']")).click();
-//select all checkboxes by searching for the common locators
-List <webElement> checkboxes = driver.findElements(By.xpath('input[@class='form-check-input' and type='checkbox']'))
-//input[@class='form-check-input' and @type='checkbox']
-for (int i = 0;i<checkboxes.size();i++){
-checkboxes.get(i).click();
-}
-===normal for loop or enhanced for loop
-for (WebElement checkbox:checkboxes){
-checkbox.click();
-}
-//select last 3 checkboxes-->total -3= starting index
-for (int i=4;i<checkboxes.size();i++ ){
-checkboxes.get(i).click();
-}
-=====//select first 3 checkboxes
-for(int i=0;i<3;i++){
-checkboxes.get(i).click();
-}
-====//unselect checkboxes if ther are selected
-for (WebElement checkbox: checkboxes)
+@BeforeSuite
+@AfterSuite
+
+method-class-test-suite
+
+
+1) login --@BeforeMethod -- before every test method
+2) search 
+3) logout---@AfterMethod
+4) login
+5) adv search 
+6) logout
+
+login-test-logout
+beforemethod-test-aftermethod
+----
+suite test class
+<suite> 
+	<test
+ 		<class>
+			//method
+		<class>
+	<test
+<suite
+====
+BeforeSuite
+	BeforeTest
+		BeforeClass
+			BeforeMethod
+				test2
+			AfterMethod
+			BeforeMethod
+				test2
+			AfterMethod	
+		AfterClass
+	AfterTest
+AfterSuite
+
+Assertion - validation point: 
+why we need assertions? even when the test is failed it gives passed so we use assertion 
+Assert.assertEquals(title1,title2) //a predefined class
+//we will see the assertion outputs in reports
+Assert.assertTrue(true)
+Assert.assertTrue(false)
+
+types of assertions:
+hard and soft
+assert.assertEquals("123",123) //fails
+Assert.assertNotEquals(123,123) //fails
+Assert.fail()
+hard assertions are the methods to access the class.
+once hard assertion is failed, it wont continue the code so we use soft assertion.
+
+SoftAssert sa=new SoftAssert()
+sa.assetEquals(1,2)
+sa.assertAll();//mandatory or evey soft assert will be passed
+
+hard assert directly access the class as Assert is a class
+soft asset we access the class through object using SoftAssert class
+
+
+
+what is annotations?
+when do we use soft / hard assert?
+---------
+Day 44:
+dependency methods 
+
+if login fails, other test cases will fail. so we need to skip all dependence methods.
+
+dependsOnMethods={"openapp"}//void openapp{} as it will skip the dependent if it fails. 
+
+grouping: 
+groups={"groupname"}
+@Test(priotroty=1,groups="sanity")
+
+@Test(priotroty=1,groups={"sanity","ss"})
+
+In XML:
+<test>
+<groups>
+	<run>
+		<include name""/>
+	</run>
+</groups>
+
+<classes>
+ <class/>
+<classes>
+</test>
+
+
+----
+Day 45: 
+parameterization
+
+
+1- @DataProvider -- data driven testing
+2- using cml file -- parallel testing 
+
+dataprovider to prepare test data and return to another test method- to provide test data to anther test data like chaining 
+:) avoid looping statmenets - repeated 
+
+
+@DataProvider(name="db", indices={0,1})//it returns object 2d type of an array- to create test data and prepare it.
+Object[][] loginData()//return data any type // indices:هياخد اول و تاني بس 
 {
-checkbox.click();
+Object data[][]={
+{"abc1@gmail.com","test1"},
+{"abc2@gmail.com","test2"},
+{"abc3@gmail.com","test3"}
+			}
+return data;
 }
 
-Thread.sleep(5000)
-
-for(int i=0;i<checkboxes.size();i++){
-if (checkboxes.get(i).isSeleccted()){
-checkboxes.get(i).click();
+@Test(DataProvider=db)
+void testlogin(String email,String pwd){
+......sendKeys(email)
 }
-}
-============================
-====================Alerts/Popups
-//normal alert-->ok
-//confirmation alert--> ok , cancel
-//prompt alaert--> text , ok, cancel
-alert is not a webElement so u cannot inspect any thing
-
-creaet new class:
-	WebDriver driver=new ChromeDriver();
-	driver.get("");
-	driver.manage().window().maximize();
-	//normal alert--ok
-	driver.findElement(By.xpath("//button..")).click();
-	Thread.sleep(2000);
-	Alert mylert=driver.switchTo().alert();
-	mylert.getText();
-	System.out.println(mylert.getText());
-	mylert.accept();
-	
-	//confirmation alert-- ok,cancel
-	
-	driver.findElement(By.xpath("//button..")).click();
-	Thread.sleep(2000);
-	Alert mylert=driver.switchTo().alert();
-	mylert.getText();
-	System.out.println(mylert.getText());
-	mylert.dismiss();
-	// prompt
-	
-	driver.findElement(By.xpath("//button..")).click();
-	Thread.sleep(2000);
-	Alert myprompt=driver.switchTo().alert();
-	myprompt.sendKeys("welcome");
-	System.out.println(mylert.getText());
-	myprompt.accept();
-	
-	//i dont wanna use switchTo 
-	//using exciplict wait 
-	
-	WebDriverWait mywait= new WebDriverWait(driver,Duration.odSeconds(10));
-	
-	Alert myalert=mywait.until(ExpectedCondtions.alertIsPresent)//return alert into var
-	
-	//authenticated popup
-	//inject usename and pass in url   http://username:password@the-ni.com/sdf
-	
-	assignment day29 
-	checkboxes
-	pop up
-	
-	
-===============================================	
-===============Day30===frames/iframes============================
-WebElement frame1 driver.findElement(By.xpath("//frame[@src='']"));
-driver.switchTo().frame(frame1)
-//driver.switchTo().frame(name/id/webelement/index)//index if we have 1 single frame
-driver.findElement("//input[@name='txt']")).sendKeys("welcom")
 
 
-driver.switchTo().defaultContent() //to go the page then frame 2 we cannot move from frame1 to antoher frame
+practice day 45:
+
+
+
