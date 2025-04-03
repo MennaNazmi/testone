@@ -128,8 +128,19 @@ return data;
 void testlogin(String email,String pwd){
 ......sendKeys(email)
 }
+---
+pass browser from xml inside a class
+<parameter name="browser" value="chrome"/>
+@Parameters({"browser"})
+void setup(String br)
 
+--
+run sequential  
+on xml create test and change the value
 
+run parallel
+<suite name="Suite" parallel="tests"> 
+or on any level
 practice day 45:
 
 
