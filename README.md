@@ -441,3 +441,66 @@ PageFactory.initElement(driver,this);}
 
 
  }
+ =======================================================8 APRIL 2025=====================
+ Day 17:
+Wrapper classes:
+WE CAN store data in object formate or primative format;
+String s="welcome";
+string s= new String("welcome")
+every primitive data there is a wrapper class.
+:) can convert the data format from string to int,char--> Integer.parseInt(vluewannaconvert);
+String.valueOf(anythingwillbe converted ot string)
+
+
+ArrayList arr=new ArrayList();//accept diff types
+:) in collecgtions we use wrapper classes
+
+package: 
+2 types of packages:
+build in "import" and user defi	ned package 
+
+access modifier:
+defines the scope of methods 
+public - protected- default - private: access only within the class
+
+Day 18:
+Exception handling:
+event cuz the program to termination. it is not an error. becomes cuz of user mistakes.
+we have 2 types of exceptions:
+	1- checked which can be handled by try catch() or  keyword
+as when i use thread.sleep() there is a change to get exception as ther process is sleeping and manybe another process wil come in parallel and interrupt the first process 
+	2- unchecked  try catch() finally//will always se conn
+Errors:
+1- syntax
+2- logical
+
+try 
+{ //ok
+}
+catch(mention the exception e)
+{//not ok
+}
+catch(another exception)
+{not ok
+}
+
+Exception class to handle all exceptions
+
+
+ 
+
+
+
+Day 19: 
+convert the data from type to type
+up casting/ widening //from smaller to larger
+down casting/ narrowing // from larger to smaller -- int y=(int) x;
+
+Parent p= new child()//upcasting from child to parent
+//storing a child object into the parent
+// we cannot access child class p.childmethod
+
+rules for typecasting
+1- there is a relationship 
+Didnt finish it 
+
