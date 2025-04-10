@@ -503,4 +503,84 @@ Parent p= new child()//upcasting from child to parent
 rules for typecasting
 1- there is a relationship 
 Didnt finish it 
+===10-4-2025
+Q1:Merge two given sorted array of integers and create a new sorted array
+جبت اخر 2 ارايس و بقارن 
+ واحط الاصغر ف الاراي الجديد و ازود الاراي القديم الي بقارن بية
+--
+Q2:Get the first occurrence of a string within a given string
+
+strstr(,)Get a pointer to the first occurrence of a string in another string
+char myStr[] = "The rain in Spain falls mainly on the plains";
+char *myPtr = strstr(myStr الجملة الي بدور فيها, "ain"الي بدور عليه);
+
+-----
+ep1 collections: 
+collection vs collection framework 
+collection is a group of objects. 
+
+collection framework: to represent group of objects into a single intity"class or interfaces" like 
+-ArrayList 
+-List 
+-HashMap
+-HashTable
+-TreeStack
+
+
+int a[] = new int[100];//group of objects 
+:( homogenious data same kind of element
+:( fixed size cannot increase or decrease
+
+
+
+Object a[]=new object[5];
+:) diff data type 
+group of objects with diff types
+:) dynamic size
+:) have methods like sort, search
+
+
+ep2: java collections:
+
+collection interface contains common methods
+collections is a class in java.utile package so we can use methods.
+
+Collections.sort(arr);  
+3 interfaces: List like ArrayList, Set, Queue 
+List is a child of collection interface
+1-ordered
+2-duplicate is allowed 
+listname.add(objectadded)
+listname.addAll(multipleobjects)
+listname.remove(objectneedtoremove)
+listname.removeAll(collectionname)
+listname.retainAll(collectionname)//all object will be removed except in retainAll
+listname.clear()
+.isEmpty()
+.size()
+.contains()
+containsAll()
+.set()
+.get()
+.sort()
+.shuffle()
+
+Set interface:  ----> HashSet, LinkHashSet
+1- not ordered --no index
+2- duplicate not allowed
+
+
+Queue interface:FIFO
+1-priority queue
+
+
+Map interface is not a child interface of collection is independent.
+
+key and value pair. 
+HashMap 
+LinkedHashMap 
+HashTable 
+
+
+
 
