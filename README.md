@@ -600,6 +600,22 @@ thanks for this opporunity to intriduce myself. my name is menna . graduated fro
 Also i have experience in sanity testing functional , regression , retest, little performance testing like load and stress test. API testing using postman to make sure the status code and payload is verified correctly with database testing.
 recently i am working in automation testing currently we use selenium webdriver as a tool and java as a language with page object model to make things organize. 
 
+
+
 As an automation tester my roles and respoisiblity to identiy test ccases and take a couple of E2E test cases to generate automation test cases to develop test classes per requiement.
 and making test scripts and execute them also review them and  awre of agile frame work. Attending daily stand up meeting  and clarificatoin meeting and demos with the clients and finally attend the retrospect meeting
+
+
+currently we use page object moodel in my organizatoin as we use maven project as there are different project in maven project like 
+1- SRC/test  src/resources in src'test all the test classes and 
+2- in src/main/java we create pages. 
+3- POM.xml we store all depenecies 
+4- testng.xml to run the test cases in paralaer with parameters from config file to store login credential as we use testng annoation with @test @beforeclass @afterclass also we use assertions for our test case base or fail to verification.
+as in maven depenecy all downloaded jar files are stored in maven dependecy 
+5- we create basepage class and baseclass which has the constructor and extened ed to test class that is inheritance operation.
+6- we create different folders like scrennshots to store any failed test cases , logs, utities 
+
+also we like jenkins continus integration 
+
+>
 
