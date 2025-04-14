@@ -602,11 +602,11 @@ recently i am working in automation testing currently we use selenium webdriver 
 
 
 
-As an automation tester my roles and respoisiblity to identiy test ccases and take a couple of E2E test cases to generate automation test cases to develop test classes per requiement.
-and making test scripts and execute them also review them and  awre of agile frame work. Attending daily stand up meeting  and clarificatoin meeting and demos with the clients and finally attend the retrospect meeting
+As an automation tester my roles and respoisiblity to identiy test ccases and select a couple of E2E test cases to generate automation scripts to develop test classes per requiement.
+and making test scripts and execute them also review them and  awre of agile frame work.Also Attending daily stand up meeting  and clarificatoin meeting and demos with the clients and finally attend the retrospect meeting
 
 
-currently we use page object moodel in my organizatoin as we use maven project as there are different project in maven project like 
+currently we use page object moodel in my organizatoin as we use maven project as there are different folders in maven project like 
 1- SRC/test  src/resources in src'test all the test classes and 
 2- in src/main/java we create pages. 
 3- POM.xml we store all depenecies 
@@ -617,5 +617,22 @@ as in maven depenecy all downloaded jar files are stored in maven dependecy
 
 also we like jenkins continus integration 
 
->
+Q)we have to use:
+comments 
+try and catch
+
+Q) host key verification failed?
+
+Q)how to test 10K users?
+
+we have2 approaches connect to database then ccreate a for loop then run
+second using jmeter using assertions 
+
+
+enviroment issues llikeOS Differences:
+. Permissions and Access Rights:
+Browser/Driver Differences 
+
+
+
 
