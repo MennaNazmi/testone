@@ -584,3 +584,22 @@ HashTable
 
 
 
+==========14-4-2025
+Cardholder data should not be stored in plaintext in the database.
+Sensitive data (e.g., full card numbers, CVV) must be encrypted using appropriate methods.
+If card data is displayed (e.g., in a report or dashboard), it must be masked to show only the last four digits of the card number and never show CVV.
+POST CONDITIONS: No sensitive data (e.g., credit card numbers, CVV) should be exposed in the database or logs.
+Cardholder data is stored in an encrypted format, with no sensitive information visible in the database or logs.
+crucial financial regulations like PCI-DSS, GDPR, SOX, and PSD2
+
+GDPR: general data protection regulationv
+
+--
+thanks for this opporunity to intriduce myself. my name is menna . graduated from .. i have a totla exp of 3.5 y in software testing field and i worked on both manaual and automation.  i have experienced ] domain  telecomm , GIS and newly investment banking  projects. as a part of testing team my roles and resposibilties is to understand requiement and do my static testing then clarify if we have any confilict with previous requiement or not. prepare test cases then report to them using DTS like jira to report the defects as dts we use in my organzization for tracking purpose or for project management tool.
+
+Also i have experience in sanity testing functional , regression , retest, little performance testing like load and stress test. API testing using postman to make sure the status code and payload is verified correctly with database testing.
+recently i am working in automation testing currently we use selenium webdriver as a tool and java as a language with page object model to make things organize. 
+
+As an automation tester my roles and respoisiblity to identiy test ccases and take a couple of E2E test cases to generate automation test cases to develop test classes per requiement.
+and making test scripts and execute them also review them and  awre of agile frame work. Attending daily stand up meeting  and clarificatoin meeting and demos with the clients and finally attend the retrospect meeting
+
