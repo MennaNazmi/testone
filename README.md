@@ -727,3 +727,72 @@ C then Z.
 Q9: what is test clouse report? 
 after closing the defects and us. so its kind of docu to client with test scenarios to ocfficatlly finish the test process. how many bugs. how many test cases.
 #############################
+#############################
+
+https://www.youtube.com/watch?v=lJSPN3EZdJ8&ab_channel=RDAutomationLearning
+
+Q1: review the test cases on particual scenario with fresher, can u tell me which are the points or details u focuse? 
+
+check if u cover all the project core functionality using test case tech like BVA, EP or even decision tree and how positive scenario and negative scneaio.
+
+Q2: u found a crical defect, u spoke to dev team, how to manage the time so it wont wasted? 
+if the defect is critical, ill make it the priortoy to be fixed as soon as possible at the same time, i am preparing my scenario and test cases  and what is the expected result and the effect on different scenario
+
+Q3: the critical defect is fixed on satureday, and the next 2 days are off. would u test on satureday or Monday? 
+
+if the release on Monday, I will tell them to be tested before Monday i know its vacation so i need to make my work perfect. 
+
+
+Q4: how much time u take to create the severity matrix? 
+after the test ccases work is done, we write the severity matrix, ID, scenario, fn,
+
+
+Q5: if u dont have access to database how to test it?
+check the env problem or connection problem. if all is ok, machine problem 
+
+Q6: u have a relaese after 1 week and before release u have working freeze no one is allowed to do any changes, but there is a requeiemtn from the client so there is a grooming section are reviewing a US?
+
+اول حاجة اسئل علي هل الحاجات الجديدية المطلوبة هتاثر علي القديم و يحصل 
+cascading defect 
+
+لو مش هتاثر نخليها الاسبرنت الي جي 
+لو هتاثر هنحطها ف الاسبرنت و نعمل رجرشن تيست
+
+Q7: what is acceptance criteria? 
+is the product accept the customer needs as the tests fullfil the customer requiements. 
+عبارة عن تشيك ليست ان الريكويرمنت تمام و ميحصلش 
+flaky testing or scenario loss 
+the non function is apart from acceptance criteria. there are some feature can be in next sprint. 
+
+Q8: what happened in daily standup meeting? 
+its an agile process. is conducted fo 15 min to answer of 3 questions. what is ur yesterday task? whats ur today task? is there any pending task in  ur hand? or problem. as its an important meeting to be aligned with dev and testers and pm. so we can finish the sprint on time.--
+what issue u faced, then raised a dts, then fixed and resolved?
+amount fix enter accept decimal values not integars only when i communicate with the dev and still not fully aware of the funcationallity. so due to my daily standup meeting
+
+
+Q9: the client changes the US the u have written the test cases and performed the test execution, how u deal with this situation?
+هقارن بين الجديد و القديم  لو في تعديل  بسيط هزود لكن لو كلها متغير هبدا من اول 
+
+############################
+https://www.youtube.com/watch?v=h4_XWnnPP8E&ab_channel=RDAutomationLearning
+
+Q1: while showing the demo a bug is showing?
+i will check my test evidence document or send it in the meeting attached and say we had test this ffeature earlier maybe there something changed so we will retest it and fix it as soon as possible. and after fixing the issue ill mention in the project group. 
+
+Q2: if the req is not clear with u what will u do?
+i will colaboorate with team members as i am seeking for the information then i will move froward but i will not jump to write the test cases. 
+
+Q3: api testing? 
+1-check url,
+2- check methods, 
+3-check user name and pass with param
+4- check the status code. 
+5- check the token timeout.
+
+################ 
+https://www.youtube.com/watch?v=0KRthSLtDPY&ab_channel=SoftwaretestingbyMKT
+
+Q1: what challenges u faced?
+
+communication- keep following the ppl fo a bug 
+some times the data is not available , the env is not ready.
