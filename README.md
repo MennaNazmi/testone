@@ -646,5 +646,37 @@ alert.accept();
 but this has to be not headless mode. GUI
 
 
+4. POM vs PageFactory?
+   Page Object Model (POM) is a design pattern in Selenium where each web page is represented by a separate class. The main idea is to create a class for each page of the application, and this class should contain all the elements and methods required to interact with that page.
 
+   Page Factory is a class that provides a convenient and efficient way to initialize and manage web elements using annotations in Selenium. It is a part of the Page Object Model but specifically refers to the way the elements of a page are initialized and managed.Page Factory leverages annotations like @FindBy and @CacheLookup to locate web elements. It is used in combination with PageFactory.initElements(driver, this) to initialize the elements on the page.
+
+   POM initialization: we use driver.findElement() or bBy locators
+   Page Factory: automatically initializes elements using PageFactory.initElements() 
+
+
+5. limitaions for selenium webdriver?
+   	1-Limited suppoer for desktop applications so we can use autoIT
+   	2-Cannot handle captchas
+    	3-Does not support some browser-specific features such as extensions
+        4-No Built-in Reporting
+   	5-Difficult to Handle Complex File Uploads and Downloads
+
+6.how to handle dynamic elements in selenium?
+	1-Using Explicit Waits -- wait.until
+ 	2-using XPath with contains() or starts-with() 
+  		WebElement element = driver.findElement(By.xpath("//*[contains(@id, 'dynamic-part')]"));
+    	3-Selenium 4, relative locators
+7. DesiredCapabilities?
+	are used to define the properties or configuration like browser configuration is chrome or edge
+
+ 8. The diff QA  ضمان الجودة and QC مراقبة الجودة?
+    QA: Process-Oriented
+    	preventing defects بنطبق الاجايل و طرق التيستنج المختلفة
+        A well-defined test strategy
+    هل بنتيست ازاى ؟ البروسيس ماشية ازاى ؟ اول حاجة ال اسموك وبعدها الفانكشنل و بعدها السانتي لو لقينا بج و بعدها الريتيست و بعدها الريجريشن  و هذا و نمشي ف البج لايف سايكل
+
+  OC:  Product-Oriented 
+       detecting defects 
+       الي بنعملو علشان نطلع الديفكتش والبجز
 
