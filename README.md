@@ -680,3 +680,50 @@ but this has to be not headless mode. GUI
        detecting defects 
        الي بنعملو علشان نطلع الديفكتش والبجز
 
+
+###########
+https://www.youtube.com/watch?v=rdv6OdbROHA&ab_channel=RDAutomationLearning
+
+Q1-If u have a requiement with no doc, how will u test ur software?
+at this time ill do exprotatry testing and understand the business needs, after understand the requiements ill write the documentation with user stories like memo from the meeting then ill write the test cases then test execution that covered all scenarios. so the short answer is expratory testing.
+
+Q2: u have a release in 3 days and ur tc are working find but the cliend want to add 1 more US added to the release so we need to add us with development and testing so its a change with deploy and build, will u say yes or will u ask for more time?
+First ill ask the stakholders and client team then ill create a test plan with acceptance criteria with test data and my resocurse so if we need more people ill ask them to finish this in 3 days for about 805 if that ok we will go thro the confirmation process. if not ill negation with them to release this new change in the next sprint.
+
+
+Its a business ask so u got the decision from the stakeholders or the client team. so if its necessary so we will deliever it. so ill create my test plan with acceptance criteria with test data. 
+then in the meeting ill show him the test plan with my resources/ people
+واني هدخل حد تاني ف التيم علشان الدنيا زحمة  لو تمام هخلص مثلا 80 ف المية ف 3 ايام 
+ف هنروح للموافقة  
+
+Q3: tell me points in retrospective meeting?
+عباردة اية الحاجاات الحلوة اية الحاجات الوحشة ازاى محسن من نفسنا؟
+need to add some mock up in ui for examples 
+
+Q4: u had us in sprint 1 and us in sprint 2. the client found a bug in us sp1 so the dev will fix that ib us sp1. u wont be to test us 2 what will u do?
+
+ill find the root cause for us 1. like any prod issue after finish sp 1 ill go to sp 2. so ill prioritize this us which the client found the bug.
+
+Q5: whats defect cascading? is a defect which is caused by another defect.
+
+Q6: how u test the api? using crud methods and compare the expected and actual results.
+
+Q7: the diff global and local var in postman?
+postman is an api testing tool. local is the smallest var scope. 
+global are the ones can use in outside the collections with diff env for examples.verify the status code and payload with inputs and outputs. when the value is changes or not. we can use assertions. 
+
+
+
+Q8: authorization vs authentication:
+authorization: مين يقدر يعمل اية؟,What can you do?
+
+authentication: مين الي هيدخل و مين لا؟Who are you? . identity of a user, device, or system
+these are in security testing. 
+
+C then Z.
+
+
+
+Q9: what is test clouse report? 
+after closing the defects and us. so its kind of docu to client with test scenarios to ocfficatlly finish the test process. how many bugs. how many test cases.
+#############################
