@@ -632,6 +632,18 @@ second using jmeter using assertions
 enviroment issues llikeOS Differences:
 . Permissions and Access Rights:
 Browser/Driver Differences 
+========20-4-2025
+authenticatoin pops up in selenium java
+
+1- passing credentials in HTTP URL 
+http://username:password@yourwebsite.com
+
+2. Handling authentication dialogs using Alert
+Alert alert=driver.swithcTo().alert();
+alert.accept();
+
+3. Using AutoIT (for Windows-based pop-ups)
+but this has to be not headless mode. GUI
 
 
 
