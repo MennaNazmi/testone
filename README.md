@@ -796,3 +796,71 @@ Q1: what challenges u faced?
 
 communication- keep following the ppl fo a bug 
 some times the data is not available , the env is not ready.
+
+#####################23-4-2025
+https://www.youtube.com/watch?v=REiiI3j8h-A&list=PLTGn8a4YcF3xjCN4ZQl3ymhVmRGDflmAd&index=42&ab_channel=RDAutomationLearning
+
+Q1: what's normalization? 
+when u have great schema.
+
+in denormalization
+
+==
+https://www.youtube.com/watch?v=_Pj0ueripow&list=PLTGn8a4YcF3xjCN4ZQl3ymhVmRGDflmAd&index=9&ab_channel=RDAutomationLearning
+
+
+Q1: write a code to read a data from excel file?
+
+
+==
+https://www.youtube.com/watch?v=7W4FFy0TEHE&t=13s&ab_channel=RDAutomationLearning
+
+Q1: the diff test scenario and test cases?
+
+test scenario is a group of test cases.
+in test case we cover low level functionality as in test case we have prereq - test steps.
+
+Q2: if u got a defect what steps u take?
+
+ill raise an issue and retest then regression test. and take an eveidance with screenshots and videos 
+
+Q3: what if developer say its not a defect? 
+go to the req that documents
+tell them/collaborate my test scenarios and steps
+inform my Team lead 
+go to PM
+
+Q4: testing in multi environment? qa env/ production env but the diff output in production env what will u do?
+
+u will validate the scenario that i go through to the client and check if that follows the acceptance criteris and req or new thing? 
+we try to find the root cause analysis. 
+CHECK ISSUE OR NOT->ROOT CAUSE "missed to test it so ill add a new test case or a new req we need to disucss with developer".
+
+
+Q5: which is the diff testing tech?and when do we use it? BVA is used at boundaries of input range rather thatn fousing on middle values.
+
+Q6: testing amazon filter? how much time? 
+first smoke testing  i calculate for design and test cases and execution on diff devices and env called compatibility testing with performance testing. if we have multiple ppl with diff lang. 
+
+planning 3 days
+functional -- 7 days
+usabliy 2 days 
+performace 5 days
+security 2 days 
+cross browsing 5 days
+
+regression 7 days
+post release 3 dyas 
+so it will take for around 35 dyas
+
+
+Q7: how to test google map?
+direction - lat -long - share location - valid/invalid address - search landmarks- filters like atms search - real time routes- offline location after downloading - zoom
+ 
+
+
+
+
+
+
+
