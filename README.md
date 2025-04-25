@@ -858,6 +858,80 @@ Q7: how to test google map?
 direction - lat -long - share location - valid/invalid address - search landmarks- filters like atms search - real time routes- offline location after downloading - zoom
  
 
+####################25-4-2025
+
+
+https://youtu.be/TowbBJYjNic?si=DVOQx-My7-GJGX32
+
+How Many types of browser in selenium?
+
+Chrome-egde-firefox
+
+How to make sure the page is loaded in selenium?
+
+By checking the element is there or not.
+
+ 
+
+How to run selenium using command line?
+
+Whats the exceptions? 
+
+Nosuchelements
+
+WebdriverException
+
+Timeout exception-->
+
+Nosuchwindow exception
+
+Sealelement exception
+
+ 
+
+ 
+
+How to scroll down And scrol down element?
+
+ 
+
+ 
+
+What are the listeners in selenium?
+
+We have2 types webdrive and testng
+
+ 
+
+ 
+
+ 
+
+How to take take screenshot in webdriver?
+
+ 
+
+Tll me test status in selenium? Smke-fn-reg- sanity- crossbrowser- integration test
+
+ 
+
+Whats assertion in selenium? Its a verifivation point
+
+ 
+
+ 
+
+Whats build faces in maven?  Validate-Combine-test-ackege-install-deploy
+
+ 
+
+ 
+
+How to handle keyboard actions?
+
+Action class and sendkeys methods
+
+Actions using in advance using apis
 
 
 
